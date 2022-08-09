@@ -1,0 +1,196 @@
+body {
+    background: rgba(150, 121, 121, 0.171);
+    font-family: 'Playfair Display', serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.page {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px #886f6156;
+    display: flex;
+}
+
+.first-page {
+    flex: 35%;
+    text-align: center;
+    background-color: #636760;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+}
+
+.first-page img {
+    margin-top: 30px;
+    border-radius: 50%;
+    margin-bottom: 7%;
+}
+
+.second-page {
+    flex: 65%;
+    margin-bottom: 10%;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 30px;
+    background-color: #DFCBD2;
+}
+
+.name p {
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.li {
+    font-weight: bold;
+    margin-bottom: 2px;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+aside li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.first-page h2 {
+    border-bottom: solid 2px #DFCBD2;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #DFCBD2;
+    text-decoration: underline;
+}
+
+.description {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 70px;
+    text-align: justify;
+}
+
+.description h2 {
+    margin-top: 40px;
+    border-bottom: solid black 2px;
+    font-size: 25px;
+}
+
+.description p {
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+td {
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.years {
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.skills {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+background-color: #DFCBD2;
+padding: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #b16a83;
+    border: dotted 5px #ca4573;;
+    }
+
+.second-page img {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 500px) { 
+     .page { 
+    flex-direction: column-reverse; 
+     justify-content: center; 
+     gap: 0;
+     border-radius: 0px;
+    }  
+
+    .first-page {
+        flex: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background-color: #a8aaa8;
+        color: black;
+    }
+
+    .second-page {
+        flex: 100%;
+        background-color: #a8aaa8;
+        margin-bottom: 0;
+    }
+
+    .first-page img {
+        display: none;
+    }
+
+    .first-page a {
+        color: black;
+    }
+
+    .second-page img {
+        display: flex;
+        border-radius: 50%;
+        visibility: visible;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .description h2 {
+        text-align: center;
+    }
+
+    .first-page h2 {
+        border-bottom: solid 2px black;
+    }
+
+    .skills {
+        justify-content: space-around;
+    }
+}
